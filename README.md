@@ -3,8 +3,8 @@ FE 카카오 선물하기 1주차 과제: React 기초
 
 ## Step 1
 
-- [ ] Create React App을 기반으로 프로젝트를 생성
-- [ ] Typescript로 프로젝트가 동작되게 세팅
+- [X] Create React App을 기반으로 프로젝트를 생성
+- [X] Typescript로 프로젝트가 동작되게 세팅
 - [ ] 절대 경로로 Import 할 수 있게 alias를 설정
 - [ ] tsconfig 설정
 - [ ] ESLint, Prettier를 추가하고 Lint 룰을 세팅
