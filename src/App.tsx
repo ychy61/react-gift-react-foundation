@@ -4,6 +4,10 @@ import '@styles/App.css';
 import Button from '@components/Button/Button';
 import InputComponent from '@components/Input/Input';
 import ImageComponent from '@components/Image/Image';
+import {
+  DefaultGoodsItem,
+  RankingGoodsItem,
+} from '@components/GoodsItem/GoodsItem'; // GoodsItem 컴포넌트 import
 import styled from '@emotion/styled';
 import RyanImage from '@images/pic1.png';
 
@@ -12,6 +16,12 @@ const ImageContainer = styled.div`
   flex-direction: column;
   gap: 20px;
   width: 150px;
+`;
+
+const GoodsContainer = styled.div`
+  display: flex;
+  gap: 20px;
+  margin-top: 20px;
 `;
 
 function App() {
@@ -124,6 +134,36 @@ function App() {
             ratio={16 / 9}
           />
         </ImageContainer>
+
+        <GoodsContainer>
+          <DefaultGoodsItem
+            imageSrc={RyanImage}
+            subtitle="Default Subtitle"
+            title="Default Title"
+            amount="$100"
+          />
+          <RankingGoodsItem
+            imageSrc={RyanImage}
+            subtitle="Ranking Subtitle 1"
+            title="Ranking Title 1"
+            amount="$200"
+            rankingIndex={1}
+          />
+          <RankingGoodsItem
+            imageSrc={RyanImage}
+            subtitle="Ranking Subtitle 2"
+            title="Ranking Title 2"
+            amount="$300"
+            rankingIndex={2}
+          />
+          <RankingGoodsItem
+            imageSrc={RyanImage}
+            subtitle="Ranking Subtitle 3"
+            title="Ranking Title 3"
+            amount="$400"
+            rankingIndex={4}
+          />
+        </GoodsContainer>
       </header>
     </div>
   );
