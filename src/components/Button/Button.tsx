@@ -56,9 +56,9 @@ const Button = styled.button<ButtonProps>`
 `;
 
 // ButtonComponent 컴포넌트 정의
-function ButtonComponent({ theme, size, children, onClick }: ButtonProps) {
+function ButtonComponent({ theme, size, children, onClick, ...rest }: ButtonProps) {
   return (
-    <Button theme={theme} size={size} onClick={onClick}>
+    <Button theme={theme} size={size} onClick={onClick} {...rest}>
       {children}
     </Button>
   );
