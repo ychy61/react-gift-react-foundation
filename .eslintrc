@@ -1,0 +1,65 @@
+{
+      "extends": [
+        "airbnb",
+        "plugin:react/recommended",
+        "plugin:@typescript-eslint/recommended",
+        "prettier"
+      ],
+      "plugins": [
+        "react",
+        "@typescript-eslint",
+        "prettier"
+      ],
+      "parser": "@typescript-eslint/parser",
+      "parserOptions": {
+        "ecmaVersion": 2020,
+        "sourceType": "module",
+        "ecmaFeatures": {
+          "jsx": true
+        }
+      },
+      "rules": {
+        "prettier/prettier": ["error"],
+        "react/jsx-filename-extension": [1, { "extensions": [".ts", ".tsx"] }],
+        "react/react-in-jsx-scope": "off",
+        "no-unused-vars": "warn",
+        "no-console": "off",
+        "@typescript-eslint/no-unused-vars": ["warn", { "vars": "all", "args": "after-used" }],
+        "import/extensions": [
+          "error",
+          "ignorePackages",
+          {
+            "js": "never",
+            "jsx": "never",
+            "ts": "never",
+            "tsx": "never"
+          }
+        ],
+        "import/no-unresolved": [
+          "error",
+          {
+            "ignore": ["^@styles/"]
+          }
+        ]
+      },
+      "settings": {
+      //ESLint가 코드에서 사용하는 import 경로를 올바르게 해석할 수 있도록 설정
+        "import/resolver": {
+          "alias": {
+            "map": [
+              ["@styles", "./src/styles"],
+              // 다른 경로 alias를 사용할떄 추가
+              ["@components", "./src/components"],
+              ["@utils", "./src/utils"]
+            ],
+            "extensions": [".ts", ".tsx", ".js", ".jsx", ".json"]
+          },
+          "node": {
+            "extensions": [".js", ".jsx", ".ts", ".tsx"]
+          }
+        },
+        "react": {
+          "version": "detect"
+        }
+      }
+    }
