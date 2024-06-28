@@ -21,7 +21,8 @@
     "jsx": "react-jsx"  // JSX 코드 변환 방식 지정, React 17+의 새 JSX 변환 사용
   },
   "include": [
-    "src"  // 컴파일 과정에 포함할 파일 또는 디렉토리 지정
+    "src",  // 컴파일 과정에 포함할 파일 또는 디렉토리 지정
+    "src/assets/images/*.png"
   ],
   "extends": "./tsconfig.paths.json"  // 다른 tsconfig 파일에서 경로 및 기타 설정 상속
 }

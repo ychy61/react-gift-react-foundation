@@ -3,6 +3,16 @@ import React, { useState } from 'react';
 import '@styles/App.css';
 import Button from '@components/Button/Button';
 import InputComponent from '@components/Input/Input';
+import ImageComponent from '@components/Image/Image';
+import styled from '@emotion/styled';
+import RyanImage from '@images/pic1.png';
+
+const ImageContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 150px;
+`;
 
 function App() {
   const [message, setMessage] = useState('');
@@ -93,6 +103,27 @@ function App() {
           Responsive Button
         </Button>
         {message && <p>{message}</p>}
+
+        <ImageContainer>
+          <ImageComponent
+            src={RyanImage} // 이미지 경로 사용
+            alt="Square image"
+            ratio="square"
+            radius={0}
+          />
+          <ImageComponent
+            src={RyanImage} // 이미지 경로 사용
+            alt="Circle image"
+            radius="circle"
+            ratio="square"
+          />
+          <ImageComponent
+            src={RyanImage} // 이미지 경로 사용
+            alt="Rounded image"
+            radius={20}
+            ratio={16 / 9}
+          />
+        </ImageContainer>
       </header>
     </div>
   );
