@@ -5,15 +5,15 @@ FE 카카오 선물하기 1주차 과제: React 기초
 
 - [X] Create React App을 기반으로 프로젝트를 생성
 - [X] Typescript로 프로젝트가 동작되게 세팅
-- [ ] 절대 경로로 Import 할 수 있게 alias를 설정
-- [ ] tsconfig 설정
-- [ ] ESLint, Prettier를 추가하고 Lint 룰을 세팅
-- [ ] Emotion 스타일 라이브러리를 추가
-- [ ] Reset CSS를 적용
-- [ ] .gitignore를 추가
-- [ ] 프로젝트에 불필요한 코드들을 정리
-- [ ] 본인만의 폴더 구조 기준을 세우고 반영
-- [ ] 일관된 코드 작성
+- [X] 절대 경로로 Import 할 수 있게 alias를 설정
+- [X] tsconfig 설정
+- [X] ESLint, Prettier를 추가하고 Lint 룰을 세팅
+- [X] Emotion 스타일 라이브러리를 추가
+- [X] Reset CSS를 적용
+- [X] .gitignore를 추가
+- [X] 프로젝트에 불필요한 코드들을 정리
+- [ ] 본인만의 폴더 구조 기준을 세우고 반영 -> step2에서 계속
+- [ ] 일관된 코드 작성 -> step2에서 계속
 - [ ] 기능 단위로 커밋
 
 ## Step 2
