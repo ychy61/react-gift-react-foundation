@@ -24,3 +24,4 @@ yarn-error.log*
 
 # Ignore VS Code settings file
 settings.json
+*storybook.log
