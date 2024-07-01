@@ -1,5 +1,12 @@
 # react-gift-react-foundation
 FE 카카오 선물하기 1주차 과제: React 기초
+## 프로젝트 실행
+```
+git clone https://github.com/ychy61/react-gift-react-foundation week1
+cd week1
+npm install
+npm start
+```
 
 ## Step 1
 
